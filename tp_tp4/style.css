@@ -1,0 +1,52 @@
+
+#output {
+  font-family: monospace;
+  white-space: pre-line;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#output div {
+  margin: 0.4rem 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+#output div:has(> :first-child:contains("OK")) {
+  background-color: #e6ffed;
+  color: #256029;
+  font-weight: bold;
+}
+
+
+#output div:has(> :first-child:contains("KO")) {
+  background-color: #ffe6e6;
+  color: #7a0000;
+  font-weight: bold;
+}
+
+
+#output a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+#output a:hover {
+  text-decoration: underline;
+}
+
+
+#output div:has(span:contains("⭐")) {
+  font-weight: bold;
+}
+
+
+#progress-label {
+  display: block;
+  margin-top: 0.4rem;
+  font-weight: bold;
+  text-align: center;
+}

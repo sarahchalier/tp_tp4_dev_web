@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Async GitHub Checker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+</head>
+<body class="section">
+  <div class="container">
+    <h1 class="title">Welcome to the Async Checker</h1>
+    <p>Click below to launch async checker!</p>
+
+    <div class="field is-grouped mt-4">
+      <div class="control">
+        <div class="select">
+          <select id="file-selector">
+            <option value="TheBody983-starred.json">TheBody983-starred.json</option>
+            <option value="Webcretaire-starred.json">Webcretaire-starred.json</option>
+            <option value="romulusFR-starred.json">romulusFR-starred.json</option>
+          </select>
+        </div>
+      </div>
+      <div class="control">
+        <button id="start" class="button is-primary">Go!</button>
+      </div>
+    </div>
+
+    <progress id="progress-bar" class="progress is-primary" value="0" max="100"></progress>
+    <span id="progress-label">Progress: 0 / 0</span>
+
+    <div id="output" class="box mt-4" style="font-family: monospace; white-space: pre-line;"></div>
+  </div>
+
+  <script src="scriptjs.js"></script>
+</body>
+</html>
