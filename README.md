@@ -1,4 +1,4 @@
-#TP programmation async côté client : l’API GitHub
+###TP programmation async côté client : l’API GitHub
 Application web qui vérifie si une liste de projets GitHub sont toujours actifs ou supprimés.
 
 ## Fonctionnalités
